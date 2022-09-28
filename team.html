@@ -1,0 +1,163 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" type="image/ico" href="favicon.ico">
+  <title>Meet the Team</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Spartan&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">  
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="se-pre-con"></div>
+    <div class="navbar">
+      <a href="index.html"><img src="img/logo.png" alt="Logo" width="150em" id="logo"></a>
+      <a href="index.html"><b>HOME</b></a>
+      <a href="our-story.html"><b>OUR STORY</b></a>
+      <a href="team.html"><b>MEET THE TEAM</b></a>
+      <!-- <a href="stemleagueplus.com"><b>STEM LEAGUE+</b></a> -->
+      <a href="apply.html"><b>APPLY</a>
+      <a href="mentor.html"><b>BECOME A MENTOR</b></a>
+      <a href="contact.html"><b>CONTACT US</a>
+      <a><button class="donate"  style="background-color: #D2D3FF" onclick=window.open('https://www.gofundme.com/f/2022-stem-league-developer-program-fund')>
+      <b>SUPPORT US</b></button>
+      </a>
+    </div>
+    <div id="founders"></div>
+    <div id="mentors"></div>
+    <!-- <div id="developerLeads"></div> -->
+    <footer>
+      <table width="100%" >
+        <tr>
+          <td style="padding:2em;">
+            <h1 style="font-size: 30px; line-height: 0.5em;">Contact Us</h1>
+            stemleague18@gmail.com
+            <br>
+            &copy; 2020 STEM League
+          </td>
+          <td width="100%" style="text-align: right;">
+            <img align="right" onClick="window.open('https://www.linkedin.com/company/43189926')" src="img/linkedin.png" width="100em" style="padding:2em">
+            <!-- <img align="right" onClick="window.open('https://twitter.com/uwstemleague')" src="img/twitter.png" width="98em" style="padding:2em"> -->
+            <img align="right" onClick="window.open('https://www.instagram.com/stemleague/')" src="img/insta.png" width="98em" style="padding:2em">
+            <img align="right" onClick="window.open('https://www.youtube.com/channel/UCkh4YnqJ1vAStzc3P3_kmWQ?view_as=subscriber')" src="img/youtube.png" width="100em" style="padding:2em">
+            <img align="right" onClick="window.open('https://www.facebook.com/stemleague/')"src="img/fb.png" width="100em" style="padding:2em">
+          </td>
+        </tr>
+      </table>
+    </footer>
+    
+      
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>   
+<script src="scripts.js"></script>
+<script>
+  var mentors = new Map([
+//     ["rinav", ["Rinav Kashuri", "Hi there! I'm Rinav, a rising junior at the University of Washington studying Computer Science (and potentially sociology?). My main interests right now are machine learning and the ethics around it (for instance, do we really want technology watching our every move?). In terms of hobbies, I love drinking tea (black, peppermint, and Earl Grey) and listening to classical music. Let’s work together to make this an awesome summer!"]],
+//     ["nikita", ["Nikita Pola", "Hey everyone! I'm Nikita Pola and I'm a sophomore studying Computer Science at NYU Tandon School of Engineering. I'm looking to pursue a minor in sustainable development/astronomy! In my free time I love to play soccer, stay active, and spend time with family! I'm looking forward to meeting you soon!"]],
+    ["alyssa", ["Alyssa Vo", "Hi everyone!! My name is Alyssa Vo, and I'm a rising senior at the University of Washington. This is my third time mentoring for the Developer Program, and I'm so excited to be back! I'm so glad that I can play a role in fostering a love for technology in young students across the country. Aside from mentoring, I'm currently interning at Hyland as a UX intern! Additionally, I love to knit, listen to music, and play video games."]],
+//     ["quinn", ["Quinn Liu", "Hello! My name is Quinn and I recently graduated from Cornell University in December 2020! At Cornell, I majored in CS, minored in business and information science. I now work full time at Lyft, where I interned last summer. Outside of tech, I like to dance, paint, cook, Netflix, and scroll endlessly through TikTok. I can’t wait to be a part of your journey into tech! "]],
+//     ["kent", ["Kent Zeng", "Hi everyone! I’m a rising junior at the University of Washington studying Computer Science and Mathematics. I’m super excited to explore the world of computing with you all this summer! In my free time I enjoy playing spikeball and volleyball, meeting new people, and learning everything from human psychology to the diverse cultures of our world. Don’t hesitate to reach out!"]],
+//     ["sally", ["Sally Zhou", "Hello! I’m Sally and I'm studying Computer Science at the University of Waterloo (in Canada!). What I really enjoy about programming is the ability to make whatever you want! In my spare time, I love to read, watch movies + tv shows (any ATLA or Ghibli fans here?), and make fun little web apps. I’m looking forward to getting to know you all and I hope you’ll learn lots with the program this summer!"]],
+//     ["simrah", ["Simrah Shaik", "Hello, Hello! My name is Simrah Shaik and I'm a rising senior majoring in CS with a double minor in BA and Finance at UIC. This summer I'll be interning with Deloitte as a cloud engineering intern. I enjoy travelling and finding cute cafes. I look forward to getting to know everyone!"]],
+    ["jessica", ["Jessica Truong", "Hey! I'm Jess, a rising senior studying Cognitive Science and Computer Science at The University of Texas at Dallas and currently interning at Tableau in Seattle. I'm excited to be back as a mentor with STEM League (this is my third summer mentoring!) Outside of school and work, I enjoy jamming out to R&B music, cruising around on anything with wheels, and exploring new places (primarily food places, hehe)."]],
+    ["isabel", ["Isabel Abonitalla", "I'm currently a computer science undergrad at CUNY Hunter College, an intern at Microsoft, the lead developer and a board member at a mental health nonprofit, the CTO of an up-and-coming European company, and a hackathon enthusiast. I'm passionate about mental health advocacy, environmental sustainability, and Filipino representation and cultural preservation (y'all should watch Trese on Netflix!). In my free time, I enjoy playing video games, watching anime, and doing nail art."]],
+//     ["ashni", ["Ashni Shah", "I’m Ash, I’m a recent grad from UW Seattle where I studied Informatics, with a focus on human computer interaction. I’m passionate about building inclusive tech for users. When I’m not coding, I love writing, going on road trips with my friends, and hanging out with my puppy."]],
+//     ["jasmine", ["Jasmine Woon", "Hi everyone! My name is Jasmine, and I'm a senior in college majoring in computer engineering. I am excited to be mentoring for STEM League again this year because I have a passion for CS education! Feel free to ask me about my internship experience, virtual/augmented reality, or anything! Outside of school and work, you can find me indulging on boba tea, hiking one of many Pacific Northwest Trails, or on the field playing ultimate frisbee."]],
+//     ["roberto", ["Roberto Diaz", "My name is Roberto, and I am a Computer Science and Engineering major at the University of Washington. I am from the Greater Seattle area and I like the weather and outdoors here. In my free time, enjoy music, food, games, and physical activity."]],
+//     ["aaron", ["Aaron Zhao", "Aaron Zhao is a rising senior at the University of Washington Information School. He majors in informatics with a minor in education."]],
+//     ["jyoti", ["Jyoti Llama", "I am a senior majoring in Computer Science at the University of Washington interested in human computer interaction, accessibility and education. This summer I am interning at Amazon and trying to get into reading and running for fun. Lastly, as a returning mentor I am looking forward to an amazing summer where we can all learn together!"]],
+    ["dena", ["Dena Sabha", "Hi there! I just graduated from University of Washington studying Human Centered Design and Engineering! I love the intersection of social sciences with the power of technology, it is the reason why I am pursuing tech today. I hope to put my efforts for social good someday. I love going on runs, playing soccer, and I am a big Harry Potter nerd! Excited to meet everyone🙂"]],
+//     ["sonal", ["Sonal Aggarwal", "Hi everyone! I’m a rising college freshman studying Computer Science. I work part-time as a software developer at the technology company Mosio. I also helped found the nonprofit Hackdemonium, which will be hosting its second hackathon this January. I participated in STEM League last year (both tracks) and I’m so excited to share what I learned with this years’ developers! In my free time, I enjoy sewing, working out, learning new languages, doing calligraphy, and participating in hackathons."]],
+    ["ahona", ["Ahona Salsabil", "Hello! I’m Ahona Salsabil and I am a Software Engineer at Microsoft. In my free time, I love reading books, catching up with friends, and dancing! This is my third time mentoring for STEM League and I loved the opportunity to interact with some amazing mentees. I’m excited to return as a mentor again this year! "]],
+    // ["angela", ["Angela Kihiko", "Angela is a class of 2021 alumna of Spelman College, with a degree in Computer Science and a minor in Japanese Studies. She was an active member of the Virtual Reality Club, where she was invited to the 2021 Cross-Cultural Impact Jam where she received an honorable mention for the Significant Impact award. Angela is now a creative software development intern for Walt Disney Research and Development. Angela loves boba, yoga, anime, philosophical books, and has traveled to Japan. She plans to travel the world. She aspires to combine her love for music and engineering to one day improve immersive technologies."]],
+    ["william", ["William Vongphanith", "Hi there! I’m William, a rising high school senior at Stuyvesant High School, based in New York. I am extremely interested in computer science, specifically machine learning and deep learning, and have done some really cool things with them (e.g. pairing multiple models for image improvement, GPT2 model optimization, and sentence summarizers). In my free time, I like to create tracker music and program Discord bots for myself and friends. I’m excited to be able to help students discover and learn computer science over my time as a mentor at Stem League!"]],
+  ["aileen", ["Aileen Niu", "Hi! I’m Aileen and I’m a rising high school senior this year. My hobbies include reading, gaming and biking! This is my third year with stem league and I’m very excited to meet everyone!"]],
+  // ["shivank", ["Shivank Mishra", "Hi, my name is Shivank Mishra. I am a recent data science grad from UIUC. Currently, I help manage projects in a tech startup. I like to surf, play music, hike, and get coffee. I am stoked to be a part of the program this year!"]]
+  ["vishwa", ["Vishwa Kumar", "Hi! I'm Vishwa, a rising junior at Newport High School with an interest in computer science. In my free time I like playing tennis, playing basketball, hanging out with friends, watching tv, and programming. I'm excited to work with everyone this summer!"]],
+  ["sai", ["Sai Praneth Raju", "Hello everyone! I'm Sai and I am a rising junior at Bothell High School, with my interests ranging from data development, cyber security to astrophysics and a bit of tennis and cooking during my free time. I'm super excited about taking part in this program and thrilled about meeting and working with you all this summer. Random things I love: food, call of duty, and space."]],
+  ["aakansh", ["Aakansh Jaypuriar", "Hi! My name is Aakansh Jaypuriar and I am a rising sophomore at the Downingtown STEM Academy. I am passionate about computer science and am an alumni of the developer program. I am very excited to be returning to STEM League as a mentor this year! In my free time I like to listen to music, play football, and spend time with friends and family."]],
+  ["dhweya", ["Dhweya Modi", "Hi, my name is Dhweya Modi and I am a junior at Redmond High School. I have been coding since 7th grade and enjoy coding. My interests are Aerospace Engineering, Computer Science, and learning about space. In my spare time, I enjoy reading books, painting on canvases, and spending time with family/friends. My goals are to have a deeper understanding of programming as well as to inspire newcomers to learn how to code."]],
+  ["phillip", ["Phillip Dinh", "I am a rising freshman at Swarthmore College who plans to major in Computer Science and possibly Engineering or Math! Coming from a strong interest in computers and mathematics, CS has combined the best of both worlds for me and has been life changing. CS is so freaking awesome!"]],
+  ["grace", ["Grace Yang", "Hi! I'm Grace, a rising senior at Newport High School in Washington. I enjoy immersing myself in computer science projects including app/website development and exploring topics including machine learning and AI. Otherwise, I enjoy Physics, sculpture and art, and dance. I'm super excited to be a first-year mentor with the STEM League this year!"]]
+]);
+
+//   var developerLeads = new Map([
+//     ["rohini", ["Rohini Arangam", "Hey everyone! I'm a rising high school senior who loves to program and explore the vast topic of computer science. My journey started with a hackathon, where I learned how to code and created my first webpage. Since then I have participated in multiple hackathons and computer science programs, including this STEM League Developers' Program. Other than coding, I love to play tennis, travel to new places, and read books! I look forward to meeting and working with y'all!"]],
+//     ["zoya", ["Zoya Hasan", "Hi everyone! My name is Zoya Hasan and I’m a rising senior at Lake Zurich High School in Lake Zurich, IL (a suburb of Chicago!) I’m passionate about computer science, data science, and artificial intelligence. I love learning and incorporating computer science into our everyday life through policy and democracy, environmental science, and social issues. I’m an avid boba drinker and love to spend time outdoors. In my free time you could always catch me reading, running cross country and track, or spending time with my friends and family :) "]],
+//     ["joshua", ["Joshua Xie", "Hi! My name is Josh and I’m an incoming senior studying at Newport High School, applying to mostly computer science schools this upcoming college admissions season! I’m from Bellevue, Washington, and within computer science, I’m most interested in Machine Learning, Artificial Intelligence, and Competitive Programming. In my free time, I like to play video games, read, and play sports (particularly football and basketball). I’m really excited to be working with you all this summer!"]],
+// ]);
+
+  var founders = new Map([
+    ["0elizabeth", ["Elizabeth Lin", "Hi everyone :) I'm a current Software Engineer at Microsoft and a UW CSE grad. In college, I TAed for the Intro to Programming Series and I really enjoy teaching. Developer Program was created from the culmination of my personal experiences in college (attending hackathons, CSE classes, events etc.) and the help of an amazing Curriculum Development Team in Summer 2020. I hope you guys enjoy the program!"]],
+    ["sophia", ["Sophia Lin", "Hi! My name is Sophia Lin and I am an incoming freshman at University of Washington majoring in Computer Science. This summer I am interning at Microsoft. I am passionate about accessible and assistive technology. In my free time I like to write short stories, act movie scenes, and construct origami."]],
+    ["christin", ["Christin Lin", "I'm a current Software Engineer at Microsoft and a UW ECE grad. I’m super excited for the summer to see this program up & going to help you all learn how to code! Outside of my work and school, I love to dance, jog, play the guitar, & play basketball! Fun fact about me is Elizabeth is my twin!"]]
+  ])
+  function load(map, d) {
+    var str = '<table style="padding-left: 9em; padding-right: 8em; padding-top: 8em;">';
+    if (d == "mentors") {
+      str += '<tr><td></td><td style="padding-left: 2.5em"><h1>Mentors</h1></td></tr>';
+    // } else if (d == "developerLeads") {
+    //   str += '<tr><td></td><td style="padding-left: 2.5em"><h1>Developer Leads</h1></td></tr>';
+    } else {
+      str += '<tr><td></td><td style="padding-left: 2.5em"><h1>Founders</h1></td></tr>';
+    }
+    var map = new Map([...map.entries()].sort());
+    
+    for (let [key, value] of map) {
+      str += '<tr><td width="15%"><img width="100%" style="border-radius: 50%;" src="img/' + key + '.png"/><br><center style="padding-bottom: 2em;">' + value[0] + '</center></td><td width="85%"><div style="padding: 3em; font-size: 12px; line-height: 2em;">' + value[1] + '</div></td></tr>';
+    }
+    str += '</table>';
+    document.getElementById(d).innerHTML = str;
+  }
+
+  function miniLoad(map, d) {
+    var title = '';
+    var str = '';
+    str = '<table style="padding-left: 9em; padding-right: 8em; padding-bottom: 3em; padding-top: 8em;">';
+    if (d == "founders") {
+      title = 'Co-Founders';
+    } else {
+      str = '<table style="padding-left: 9em; padding-right: 8em; padding-bottom: 3em;">';
+      // if (d == "developerLeads") {
+      //   title = 'Developer Leads';
+      // } else {
+      title = 'Mentors';
+      // }
+    }
+    
+    
+    str += '<tr><td></td><td><h1 style="text-align: center;">' + title + '</h1></td><td></td></tr>';
+    var map = new Map([...map.entries()].sort());
+    var i = 0;
+    var perRow = 3;
+    var perc = 100 / perRow;
+    for (let [key, value] of map) {
+      console.log(key);
+      var temp = '';
+      temp += '<td width="' + perc + '%" style="padding: 1em;"><center><img width="100%;" style="border-radius: 50%; padding: 2em;" src="img/' + key + '.png"/></center><center style="font-size: 23px;">' + value[0] + '</center><p style="line-height: 1.5em; font-size: 15px;">' + value[1] + '</p></td>';
+      if (i == 0) {
+        str += '<tr>' + temp;
+      } else if ((i + 1) % perRow == 0) {
+        str += temp + '</tr><tr>';
+      } else {
+        str += temp;
+      }
+      i += 1;
+    }
+    str += '</tr></table>';
+
+    document.getElementById(d).innerHTML = str;
+  }
+
+  miniLoad(founders, "founders")
+  miniLoad(mentors, "mentors");
+  // miniLoad(developerLeads, "developerLeads");
+  </script>
+</body>
+</html>
